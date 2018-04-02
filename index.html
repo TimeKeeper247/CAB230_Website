@@ -1,16 +1,101 @@
 <!doctype html>
 <html>
 <head>
-  <title>Title</title>
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900%7COpen+Sans" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>MD Wifi Hotspots</title>
 </head>
 
 <body>
-  <header>
-  <nav>
-  </nav>
+  <header id="mainHeader">
+    <nav>
+      <div class="container">
+        <div class="pullLeft">
+          <a class="navBtns" href="index.html">Home</a>
+          <a class="navBtns" href="results.html">Results</a>
+          <a class="navBtns" href="individual.html">Individual</a>
+        </div>
+        <div class="pullRight">
+          <a id="accountBtn" href="registration.html">Account</a>
+        </div>
+      </div>
+    </nav>
+    <section class="searchBody">
+      <div class="container">
+        <!-- <img src="img/logo.png" alt="Wifi Hotspots">-->
+        <header id="headerArea" class="mb20px">
+          <h3 class="title mb15px">Locate the nearest wifi hotspot</h3>
+          <span class="subtitle mb15px">With just a click of a button, we will help you to locate the nearest wifi hotspot in Brisbane.</span>
+        </header>
+        <!-- Search Form (to be made into a correct form in stage 2.) -->
+        <section class="searchForm mb25px">
+          <input class="searchInput" name="searchName" type="text" placeholder="Where">
+          <!-- Suburbs to be sorted according to alphabetical order -->
+          <select class="searchInput" name="searchSuburb">
+            <option value="" disabled selected>Suburb</option>
+            <option value="suburbAnnerley">Annerley</option>
+            <option value="suburbAshgrove">Ashgrove</option>
+            <option value="suburbBanyo">Banyo</option>
+            <option value="suburbBellbowrie">Bellbowrie</option>
+            <option value="suburbBrackenRidge">Bracken Ridge</option>
+            <option value="suburbBrisbane">Brisbane</option>
+            <option value="suburbBulimba">Bulimba</option>
+            <option value="suburbChermside">Chermside</option>
+            <option value="suburbCalamvale">Calamvale</option>
+            <option value="suburbCarina">Carina</option>
+            <option value="suburbCarindale">Carindale</option>
+            <option value="suburbBrisbaneCity">Brisbane City</option>
+            <option value="suburbCoopersPlains">Coopers Plains</option>
+            <option value="suburbCorinda">Corinda</option>
+            <option value="suburbMacGregor">MacGregor</option>
+            <option value="suburbSandgate">Sandgate</option>
+            <option value="suburbEvertonPark">Everton Park</option>
+            <option value="suburbFairfield">Fairfield</option>
+            <option value="suburbForestLake">Forest Lake</option>
+            <option value="suburbUpperMountGravatt">Upper Mount Gravatt</option>
+            <option value="suburbHollandParkWest">Holland Park West</option>
+            <option value="suburbGrange">Grange</option>
+            <option value="suburbPaddingon">Paddingon</option>
+            <option value="suburbStLucia">St Lucia</option>
+            <option value="suburbToowong">Toowong</option>
+            <option value="suburbHamilton">Hamilton</option>
+            <option value="suburbFitzgibbon">Fitzgibbon</option>
+            <option value="suburbHollandPark">Holland Park</option>
+            <option value="suburbInala">Inala</option>
+            <option value="suburbIndooroopilly">Indooroopilly</option>
+            <option value="suburbClayfield">Clayfield</option>
+            <option value="suburbKenmore">Kenmore</option>
+            <option value="suburbMitchelton">Mitchelton</option>
+            <option value="suburbMtGravatt">Mt Gravatt</option>
+            <option value="suburbMtOmmaney">Mt Ommaney</option>
+            <option value="suburbNewFarm">New Farm</option>
+            <option value="suburbNundah">Nundah</option>
+            <option value="suburbAscot">Ascot</option>
+            <option value="suburbWestEnd">West End</option>
+            <option value="suburbSeventeenMileRocks">Seventeen Mile Rocks</option>
+            <option value="suburbStonesCorner">Stones Corner</option>
+            <option value="suburbSunnybankHills">Sunnybank Hills</option>
+            <option value="suburbWynnum">Wynnum</option>
+            <option value="suburbZillmere">Zillmere</option>
+          </select>
+          <div class="rating">
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+          <a class="btns ml15px" href="results.html">Search</a>
+        </section>
+        <p class="mb25px">or</p>
+        <p class="subtitle mb15px">Search based on your location.</p>
+        <a class="btns" href="results.html">Locate Me</a>
+      </div>
+    </section>
   </header>
   <main>
-
   </main>
   <footer>
 
