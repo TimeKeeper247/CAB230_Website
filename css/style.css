@@ -154,19 +154,7 @@ nav {
   background-color: #e6e6e6;
 }
 
-.rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-}
-
-.rating > span {
-  display: inline-block;
-  position: relative;
-  width: 1.1em;
-}
-
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-   content: "";
-   position: absolute;
+.searchInput > option {
+  font-size: 15px;
+  color: #252525;
 }
