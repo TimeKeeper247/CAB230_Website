@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <link rel="stylesheet" href="css/grid.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
@@ -28,7 +29,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="row">
+          <div class="row" id="backResults">
             <a href="results.html"><i class="fas fa-arrow-left"></i> Back to results</a>
           </div>
           <div class="row">
@@ -54,10 +55,12 @@
               <h3 class="widgetTitle">Comments</h3>
               <div class="widgetComment">
                 <p class="commentAuthor font-heavy">John Doe</p>
+                <span class="commentRating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                 <p class="commentContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
               <div class="widgetComment">
                 <p class="commentAuthor font-heavy">John Doe</p>
+                <span class="commentRating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                 <p class="commentContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
@@ -65,14 +68,30 @@
           <div class="row">
             <div class="individualWidget">
               <h3 class="widgetTitle">New Comment</h3>
-              <div class="widgetComment">
-                <p class="commentAuthor font-heavy">John Doe</p>
-                <p class="commentContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <div class="col-12">
+                <p>Select your rating: <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
               </div>
-              <div class="widgetComment">
-                <p class="commentAuthor font-heavy">John Doe</p>
-                <p class="commentContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
+              <form>
+                <div class="col-6">
+                  <div class="commentFields">
+                    <input class="commentInput" type="text" name="commentName" placeholder="Full Name">
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="commentFields">
+                    <input class="commentInput" type="text" name="commentEmail" placeholder="Email Address">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="commentFields">
+                    <textarea rows="10" name="commentMessage" placeholder="Your Review"></textarea>
+                  </div>
+                </div>
+                <a href="individual.html" class="btns btn">
+                  <div class="icon commentIcon"><i class="fas fa-paper-plane"></i></div>
+                  <span>Submit</span>
+                </a>
+              </form>
             </div>
           </div>
         </div>
@@ -81,7 +100,8 @@
             <div class="individualWidget">
               <h3 class="widgetTitle">Location</h3>
               <div class="mapouter"><div class="gmap_canvas"><iframe width="289" height="351" id="gmap_canvas" src="https://maps.google.com/maps?q=135 Sydney Street&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
-              <p class="widgetAddress"><i class="fas fa-map-pin"></i> 135 Sydney Street, New Farm, 4005</p>
+              <p class="widgetDescription">Location: 135 Sydney Street, New Farm, 4005</p>
+              <p class="widgetDescription">Rating: 5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             </div>
           </div>
         </aside>

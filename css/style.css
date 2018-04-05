@@ -276,6 +276,10 @@ nav {
   color: #252525
 }
 
+#backResults {
+  margin-bottom: 30px;
+}
+
 .individualBanner img {
   height: 320px;
   width: 100%;
@@ -298,13 +302,12 @@ nav {
   font-size: 16px;
 }
 
-.widgetAddress {
+.widgetDescription {
   font-size: 14px;
 }
 
-.widgetAddress i {
+.widgetDescription i {
   color: #DA3743;
-  margin-right: 10px;
 }
 
 .widgetComment {
@@ -319,9 +322,31 @@ nav {
   margin-bottom: 0;
 }
 
+.commentRating i {
+  color: #DA3743;
+}
+
 .commentContent {
   font-size: 15px;
-  margin-top: 0;
+}
+
+.commentInput {
+  height: 54px;
+}
+
+.commentFields input, textarea {
+  width: 100%;
+  border: 1px solid #E5E5E5;
+  border-radius: 3px;
+  padding: 0 10px;
+}
+
+.commentFields textarea {
+  padding-top: 15px;
+}
+
+.commentIcon i {
+  color: #fff;
 }
 
 /* FOOTER SECTION */
