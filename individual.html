@@ -1,20 +1,117 @@
 <!doctype html>
 <html>
 <head>
-  <link rel="stylesheet" href="css/reset.css" type="text/css">
-  <title>MD Wifi Hotspots</title>
+  <link rel="stylesheet" href="css/grid.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <title>Wifispot</title>
 </head>
 
 <body>
-  <header>
-  <nav>
-  </nav>
+  <header class="navigationMenu">
+    <nav>
+      <div class="container">
+        <div class="row">
+          <div class="col-6 left">
+            <a class="navBtns" href="index.html">Home</a>
+            <a class="navBtns" href="results.html">Results</a>
+            <a class="navBtns" href="individual.html">Individual</a>
+          </div>
+          <div class="col-6 right">
+            <a id="accountBtn" href="registration.html">Account</a>
+          </div>
+        </div>
+      </div>
+    </nav>
   </header>
-  <main>
-
+  <main class="individualSection mt25px">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <a href="results.html"><i class="fas fa-arrow-left"></i> Back to results</a>
+          </div>
+          <div class="row">
+            <div class="individualBanner">
+              <img src="img/individual-banner.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <h1>New Farm Library Wifi</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <div class="row">
+            <div class="individualWidget">
+              <h3 class="widgetTitle">Description</h3>
+              <p class="widgetContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor interdum diam, in hendrerit sem varius id. Aliquam id eros nec elit pretium mollis. Sed sit amet urna bibendum enim consectetur feugiat. Nunc libero elit, sodales at fringilla a, ultrices ut mauris. Nulla nec molestie est. Cras augue justo, pellentesque non aliquam id, varius at tortor. In quis porta ipsum, ut porta nisl. Mauris ipsum ipsum, semper vel lectus consequat, eleifend commodo justo. Ut ultricies malesuada tellus nec luctus. Praesent vel sagittis elit, quis laoreet dui. In laoreet luctus mauris in maximus. Integer orci eros, egestas at sem in, semper hendrerit urna. Duis at placerat arcu, efficitur faucibus sapien.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="individualWidget">
+              <h3 class="widgetTitle">Comments</h3>
+              <div class="widgetComment">
+                <p class="commentAuthor font-heavy">John Doe</p>
+                <p class="commentContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="widgetComment">
+                <p class="commentAuthor font-heavy">John Doe</p>
+                <p class="commentContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="individualWidget">
+              <h3 class="widgetTitle">New Comment</h3>
+              <div class="widgetComment">
+                <p class="commentAuthor font-heavy">John Doe</p>
+                <p class="commentContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="widgetComment">
+                <p class="commentAuthor font-heavy">John Doe</p>
+                <p class="commentContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="col-4">
+          <div class="row">
+            <div class="individualWidget">
+              <h3 class="widgetTitle">Location</h3>
+              <div class="mapouter"><div class="gmap_canvas"><iframe width="289" height="351" id="gmap_canvas" src="https://maps.google.com/maps?q=135 Sydney Street&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
+              <p class="widgetAddress"><i class="fas fa-map-pin"></i> 135 Sydney Street, New Farm, 4005</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
   </main>
   <footer>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <h3 id="footerLogo"><a href="index.html">Wifispot</a></h3>
+        </div>
+        <div class="col-4">
+          <div class="footerTitle font-heavy mb20px">Sitemap</div>
+          <ul class="sitemapList">
+            <li><a href="results.html">Results</a></li>
+            <li><a href="individual.html">Individual</a></li>
+            <li><a href="registration.html">Account</a></li>
+          </ul>
+        </div>
+        <div class="col-4">
+          <div class="footerTitle font-heavy mb20px">Follow Us</div>
+          <div class="socialButtons">
+            <a href="#" class="socialButton facebookLogo"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="socialButton instagramLogo"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="socialButton twitterLogo"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

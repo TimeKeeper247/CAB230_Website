@@ -89,7 +89,7 @@ a {
   margin-left: 50px;
 }
 
-/* NAVIGATION SECTION */
+/* HOMEPAGE NAVIGATION SECTION */
 
 #mainHeader {
   background: linear-gradient(rgba(56, 56, 56, 0.85), rgba(56, 56, 56, 0.85)), url(../img/background.jpg) no-repeat center center;
@@ -143,6 +143,18 @@ nav {
 
 #accountBtn:hover {
     border: 2px solid #fff;
+}
+
+/* OTHER NAVIGATION SECTION */
+
+.navigationMenu {
+  background-color: #262424;
+  padding-bottom: 15px;
+}
+
+.titleCover {
+  background-color: #3C3C3C;
+  padding: 50px 0;
 }
 
 /* SEARCH SECTION */
@@ -207,7 +219,7 @@ nav {
 /* HOMEPAGE - TOP 3 SECTION */
 
 .thumbnail {
-  border: 1px solid #ddd;
+  border: 1px solid #E8ECF1;
   border-radius: 3px;
 }
 
@@ -256,6 +268,60 @@ nav {
 
 .thumbnailButton {
   margin-top: 20px;
+}
+
+/* INDIVIDUAL SECTION */
+
+.individualSection * {
+  color: #252525
+}
+
+.individualBanner img {
+  height: 320px;
+  width: 100%;
+}
+
+.individualWidget {
+  border: 1px solid #E8ECF1;
+  border-radius: 2px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.widgetTitle {
+  border-bottom: 4px solid #E8ECF1;
+  font-size: 24px;
+  margin: 0;
+}
+
+.widgetContent {
+  font-size: 16px;
+}
+
+.widgetAddress {
+  font-size: 14px;
+}
+
+.widgetAddress i {
+  color: #DA3743;
+  margin-right: 10px;
+}
+
+.widgetComment {
+  border-bottom: 1px solid #E8ECF1;
+}
+
+.widgetComment:last-child {
+  border: none;
+}
+
+.commentAuthor {
+  margin-bottom: 0;
+}
+
+.commentContent {
+  font-size: 15px;
+  margin-top: 0;
 }
 
 /* FOOTER SECTION */
