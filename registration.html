@@ -44,26 +44,29 @@
               <div class="col-12">
                 <div class="commentFields">
                   <label for="registerUsername">Username</label>
-                  <input class="commentInput" type="text" name="registerUsername" id="registerUsername" placeholder="Userame">
+                  <input class="commentInput" type="text" name="registerUsername" id="registerUsername" placeholder="Userame" required>
                 </div>
               </div>
               <div class="col-12">
                 <div class="commentFields">
                   <label for="registerEmail">Email Address</label>
-                  <input class="commentInput" type="email" name="registerEmail" id="registerEmail" placeholder="Email Address">
+                  <input class="commentInput" type="email" name="registerEmail" id="registerEmail" placeholder="Email Address" required>
                 </div>
               </div>
               <div class="col-12">
                 <div class="commentFields">
                   <label for="registerPassword">Password</label>
-                  <input class="commentInput" type="password" name="registerPassword" id="registerPassword" placeholder="Password">
+                  <input class="commentInput" type="password" name="registerPassword" id="registerPassword" placeholder="Password" required>
                 </div>
               </div>
               <div class="col-12">
                 <div class="commentFields">
                   <label for="registerConfirmPassword">Confirm Password</label>
-                  <input class="commentInput" type="password" name="registerConfirmPassword" id="registerConfirmPassword" placeholder="Confirm Password">
+                  <input class="commentInput" type="password" name="registerConfirmPassword" id="registerConfirmPassword" placeholder="Confirm Password" required>
                 </div>
+              </div>
+              <div class="col-12 left">
+                <input type="checkbox" name="registerAgree" required><span class="accountCheckboxText">I agree to the Terms and Conditions</span>
               </div>
               <button class="btns btn" type="submit" form="formRegister">
                 <div class="icon commentIcon"><i class="fas fa-paper-plane"></i></div>
@@ -79,14 +82,17 @@
               <div class="col-12">
                 <div class="commentFields">
                   <label for="loginUsername">Username</label>
-                  <input class="commentInput" type="text" name="loginUsername" id="loginUsername" placeholder="Username">
+                  <input class="commentInput" type="text" name="loginUsername" id="loginUsername" placeholder="Username" required>
                 </div>
               </div>
               <div class="col-12">
                 <div class="commentFields">
                   <label for="loginPassword">Password</label>
-                  <input class="commentInput" type="password" name="loginPassword" id="loginPassword" placeholder="Password">
+                  <input class="commentInput" type="password" name="loginPassword" id="loginPassword" placeholder="Password" required>
                 </div>
+              </div>
+              <div class="col-12 left">
+                <input type="checkbox" name="loginStay"><span class="accountCheckboxText">Stay logged in</span>
               </div>
               <button class="btns btn" type="submit" form="formLogin">
                 <div class="icon commentIcon"><i class="fas fa-paper-plane"></i></div>

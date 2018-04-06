@@ -367,6 +367,10 @@ nav {
   width: 150px;
 }
 
+.accountCheckboxText {
+  font-size: 14px;
+}
+
 /* FOOTER SECTION */
 
 footer {

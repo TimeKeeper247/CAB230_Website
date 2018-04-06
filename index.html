@@ -109,10 +109,11 @@
               <div class="col-12 center">
                 <p>or</p>
                 <p class="subtitle">Search based on your location</p>
-                <div class="btns btn">
+                <button onclick="getLocation()" class="btns btn">
                   <div class="icon"><i class="fas fa-map-pin"></i></div>
                   <span>Locate</span>
-                </div>
+                </button>
+                <p id="coordinates"></p>
               </div>
             </div>
           </div>
@@ -206,5 +207,22 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    var x = document.getElementById("coordinates");
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude +
+        "<br>Longitude: " + position.coords.longitude;
+    }
+  </script>
 </body>
 </html>
