@@ -33,7 +33,7 @@ a {
   outline: none;
   display: block;
   cursor: pointer;
-  width: 100px;
+  width: 150px;
   background-color: #DA3743;
   position: relative;
   border: 2px solid #DA3743;
@@ -272,6 +272,10 @@ nav {
 
 /* INDIVIDUAL SECTION */
 
+.individualSection {
+  padding: 80px 0;
+}
+
 .individualSection * {
   color: #252525
 }
@@ -347,6 +351,20 @@ nav {
 
 .commentIcon i {
   color: #fff;
+}
+
+/* REGISTRATION SECTION */
+
+.registrationSection {
+  padding: 80px 0;
+}
+
+.registrationSection * {
+  color: #252525;
+}
+
+.accountSubmit {
+  width: 150px;
 }
 
 /* FOOTER SECTION */
