@@ -2,13 +2,24 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta property="og:title" content="Wifispot">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="logo.png">
+
+  <!-- Grid stylesheet -->
   <link rel="stylesheet" href="css/grid.css" type="text/css">
+
+  <!-- Main website's stylesheet -->
   <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <!-- Fontawesome Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-    <title>Wifispot</title>
+  <title>Wifispot</title>
 </head>
 
 <body>
+  <!-- Navigation for homepage only -->
   <header id="mainHeader">
     <nav>
       <div class="container">
@@ -24,11 +35,12 @@
         </div>
       </div>
     </nav>
+
+    <!-- Search section - Comprising of a search form to search based on location, suburb and rating. -->
     <section class="searchBody">
       <div class="container">
         <div class="row">
           <div class="col-12 center">
-            <!-- <img src="img/logo.png" alt="Wifi Hotspots">-->
             <div id="headerArea" class="mb20px">
               <h1 class="font-heavy mb15px">Locate the nearest wifi hotspot</h1>
               <span class="subtitle mb15px">With just a click of a button, Wifispot will help you to locate the nearest wifi hotspot in Brisbane</span>
@@ -105,12 +117,14 @@
                 </a>
               </div>
             </div>
+
+            <!-- Search based on user's location -->
             <div class="row">
               <div class="col-12 center">
                 <p>or</p>
                 <p class="subtitle">Search based on your location</p>
                 <button onclick="getLocation()" class="btns btn">
-                  <div class="icon"><i class="fas fa-map-pin"></i></div>
+                  <i class="icon"><i class="fas fa-map-pin"></i></i>
                   <span>Locate</span>
                 </button>
                 <p id="coordinates"></p>
@@ -121,6 +135,8 @@
       </div>
     </section>
   </header>
+
+  <!-- Homepage main - Comprising of the top 3 wifi hotspots -->
   <main>
     <section class="mainArea">
       <div class="container">
@@ -182,6 +198,8 @@
       </div>
     </section>
   </main>
+
+  <!-- Footer section - Comprising of Website name, Sitemap and Social links -->
   <footer>
     <div class="container">
       <div class="row">
@@ -208,21 +226,7 @@
     </div>
   </footer>
 
-  <script>
-    var x = document.getElementById("coordinates");
-
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-    }
-
-    function showPosition(position) {
-        x.innerHTML = "Latitude: " + position.coords.latitude +
-        "<br>Longitude: " + position.coords.longitude;
-    }
-  </script>
+  <!-- External Javascript file linking -->
+  <script src="js/location.js"></script>
 </body>
 </html>

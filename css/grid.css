@@ -182,7 +182,7 @@ p {
   display: none;
 }
 
-@media only screen and (min-width: 33.75em) {  /* 540px */
+@media only screen and (min-width: 20em) {  /* 540px */
   .container {
     width: 80%;
   }

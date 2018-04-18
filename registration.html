@@ -2,13 +2,24 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta property="og:title" content="Wifispot">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="logo.png">
+
+  <!-- Grid stylesheet -->
   <link rel="stylesheet" href="css/grid.css" type="text/css">
+
+  <!-- Main website's stylesheet -->
   <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <!-- Fontawesome Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-    <title>Wifispot</title>
+  <title>Wifispot</title>
 </head>
 
 <body>
+  <!-- Navigation for all other pages -->
   <header class="navigationMenu">
     <nav>
       <div class="container">
@@ -25,6 +36,8 @@
       </div>
     </nav>
   </header>
+
+  <!-- Registration / Login section - Users can opt to register or login onto the website -->
   <section class="titleCover">
     <div class="container">
       <div class="row">
@@ -34,6 +47,7 @@
       </div>
     </div>
   </section>
+  <!-- Registration section - Username, Email and Password is required to register -->
   <main class="registrationSection">
     <div class="container">
       <div class="row">
@@ -69,12 +83,14 @@
                 <input type="checkbox" name="registerAgree" required><span class="accountCheckboxText">I agree to the Terms and Conditions</span>
               </div>
               <button class="btns btn" type="submit" form="formRegister">
-                <div class="icon commentIcon"><i class="fas fa-paper-plane"></i></div>
+                <i class="icon commentIcon"><i class="fas fa-paper-plane"></i></i>
                 <span>Register</span>
               </button>
             </form>
           </div>
         </div>
+
+        <!-- Login section - Correct username and password is required to login -->
         <div class="col-6">
           <div class="individualWidget">
             <h3 class="widgetTitle">Login</h3>
@@ -95,7 +111,7 @@
                 <input type="checkbox" name="loginStay"><span class="accountCheckboxText">Stay logged in</span>
               </div>
               <button class="btns btn" type="submit" form="formLogin">
-                <div class="icon commentIcon"><i class="fas fa-paper-plane"></i></div>
+                <i class="icon commentIcon"><i class="fas fa-paper-plane"></i></i>
                 <span>Login</span>
               </button>
             </form>
@@ -104,6 +120,8 @@
       </div>
     </div>
   </main>
+
+  <!-- Footer section - Comprising of Website name, Sitemap and Social links -->
   <footer>
     <div class="container">
       <div class="row">

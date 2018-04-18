@@ -2,13 +2,26 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta property="og:title" content="Wifispot">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="logo.png">
+
+  <!-- Grid stylesheet -->
   <link rel="stylesheet" href="css/grid.css" type="text/css">
+
+  <!-- Main website's stylesheet -->
   <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <!-- Fontawesome Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-    <title>Wifispot</title>
+
+  <!-- <script src="js/map.js"></script> -->
+  <title>Wifispot</title>
 </head>
 
 <body>
+  <!-- Navigation for all other pages -->
   <header class="navigationMenu">
     <nav>
       <div class="container">
@@ -25,6 +38,8 @@
       </div>
     </nav>
   </header>
+
+  <!-- Individual section - Showing each individual wifi hotspots -->
   <main class="individualSection">
     <div class="container">
       <div class="row">
@@ -34,7 +49,7 @@
           </div>
           <div class="row">
             <div class="individualBanner">
-              <img src="img/individual-banner.jpg">
+              <img src="img/individual-banner.jpg" alt="Wifispot banner">
             </div>
           </div>
           <div class="row">
@@ -99,7 +114,7 @@
           <div class="row">
             <div class="individualWidget">
               <h3 class="widgetTitle">Location</h3>
-              <div class="mapouter"><div class="gmap_canvas"><iframe width="289" height="351" id="gmap_canvas" src="https://maps.google.com/maps?q=135 Sydney Street&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
+              <div id="individualMap"></div>
               <p class="widgetDescription">Location: 135 Sydney Street, New Farm, 4005</p>
               <p class="widgetDescription">Rating: 5 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             </div>
@@ -108,6 +123,8 @@
       </div>
     </div>
   </main>
+
+  <!-- Footer section - Comprising of Website name, Sitemap and Social links -->
   <footer>
     <div class="container">
       <div class="row">
@@ -133,5 +150,9 @@
       </div>
     </div>
   </footer>
+
+  <!-- Google maps API and Javascript -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhSI0bxEbtth95myJ0oG2UYXko6CeKwHI&callback=initMap"></script>
+  <script src="js/individual-map.js"></script>
 </body>
 </html>

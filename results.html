@@ -2,13 +2,24 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta property="og:title" content="Wifispot">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="logo.png">
+
+  <!-- Grid stylesheet -->
   <link rel="stylesheet" href="css/grid.css" type="text/css">
+
+  <!-- Main website's stylesheet -->
   <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <!-- Fontawesome Icons -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-    <title>Wifispot</title>
+  <title>Wifispot</title>
 </head>
 
 <body>
+  <!-- Navigation for all other pages -->
   <header class="navigationMenu">
     <nav>
       <div class="container">
@@ -25,6 +36,7 @@
       </div>
     </nav>
   </header>
+  <!-- Results section - Showing results based on user's search -->
   <section class="titleCover">
     <div class="container">
       <div class="row">
@@ -43,6 +55,11 @@
             <div class="mainHeader">
               <h2 class="mainTitle font-heavy">Results:</h2>
             </div>
+          </div>
+        </div>
+        <div class="row mb25px">
+          <div class="col-12">
+            <div id="resultsMap"></div>
           </div>
         </div>
         <div class="row">
@@ -80,6 +97,8 @@
       </div>
     </section>
   </main>
+
+  <!-- Footer section - Comprising of Website name, Sitemap and Social links -->
   <footer>
     <div class="container">
       <div class="row">
@@ -105,5 +124,9 @@
       </div>
     </div>
   </footer>
+
+  <!-- Google maps API and Javascript -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhSI0bxEbtth95myJ0oG2UYXko6CeKwHI&callback=initMap"></script>
+  <script src="js/results-map.js"></script>
 </body>
 </html>
